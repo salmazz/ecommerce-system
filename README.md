@@ -21,8 +21,7 @@
 9. [Postman Collection](#postman-collection)
 10. [Testing](#testing)
 11. [Caching](#caching)
-12. [Contributing](#contributing)
-13. [Contact Information](#contact-information)
+12. [Contact Information](#contact-information)
 
 ---
 
@@ -145,36 +144,17 @@ The API is structured to handle different types of users with specific routes:
 
 ### **Seeders and Factories**
 
-#### **User Seeder**
+#### **User credential**
 The database is seeded with both an admin and a regular user for testing purposes:
 
 ```php
-<?php
-
-namespace Database\Seeders;
-
-use App\Models\User;
-use Illuminate\Database\Seeder;
-
-class UserSeeder extends Seeder
-{
-    public function run(): void
-    {
-        User::factory()->create([
-            'name' => 'Admin User',
+Admin credential 
             'email' => 'admin@example.com',
-            'role' => 'admin',
-            'password' => bcrypt('secret'),
-        ]);
-
-        User::factory()->create([
-            'name' => 'Regular User',
+            'password' => 'secret'
+    
+User credential     
             'email' => 'user@example.com',
-            'role' => 'user',
-            'password' => bcrypt('secret'),
-        ]);
-    }
-}
+            'password' => 'secret'
 ```
 
 ### **Factories**
@@ -237,26 +217,10 @@ Caching is implemented using Laravel's caching system to improve the performance
   php artisan cache:clear
   ```
 
-## **Contributing**
-1. Fork the repository.
-2. Create your feature branch:
-   ```bash
-   git checkout -b feature/new-feature
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m 'Add a new feature'
-   ```
-4. Push to the branch:
-   ```bash
-   git push origin feature/new-feature
-   ```
-5. Create a new Pull Request.
-
 ## **Contact Information**
 For any inquiries or issues, feel free to contact:
-- **Name**: Your Name
-- **Email**: your.email@example.com
+- **Name**: Salma Mehanny
+- **Email**: salmamehanny@gmail.com
 - **GitHub**: [salmazz](https://github.com/salmazz)
 
 ---
