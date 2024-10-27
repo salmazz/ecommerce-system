@@ -54,7 +54,7 @@ Below is a brief description of the major components in the project:
 ## **Features**
 - **Authentication** using Laravel Sanctum.
 - **User and Admin roles** for access control.
-- **Product & Category Management** (CRUD operations for admin).
+- **Product & Category Management**
 - **Order Management** (placing orders, checking product availability, etc.).
 - **Search and Pagination** for products.
 - **Caching** of frequently accessed data (products) for performance optimization.
