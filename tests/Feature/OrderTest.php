@@ -7,6 +7,7 @@ use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
+use PHPUnit\Framework\Attributes\Test;
 
 class OrderTest extends TestCase
 {
@@ -17,7 +18,7 @@ class OrderTest extends TestCase
         parent::setUp();
     }
 
-    /** @test */
+    #[Test]
     public function it_creates_an_order_successfully_with_valid_data()
     {
         // Create a user
@@ -51,7 +52,7 @@ class OrderTest extends TestCase
         $this->assertEquals(4, $product2->fresh()->stock);
     }
 
-    /** @test */
+    #[Test]
     public function it_returns_validation_error_when_required_fields_are_missing()
     {
         // Create a user
@@ -72,7 +73,7 @@ class OrderTest extends TestCase
         $response->assertJsonValidationErrors(['products.0.id', 'products.0.quantity']);
     }
 
-    /** @test */
+    #[Test]
     public function it_fails_when_product_has_insufficient_stock()
     {
         // Create a user
