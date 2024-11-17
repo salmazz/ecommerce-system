@@ -26,7 +26,7 @@
 ---
 
 ## **Introduction**
-This project is a simplified e-commerce system built using Laravel 8 that provides a RESTful API to manage products, categories, and orders. The system is designed with robust authentication, validation, and error handling mechanisms to ensure the secure and accurate processing of orders.
+This project is a simplified e-commerce system built using Laravel that provides a RESTful API to manage products, categories, and orders. The system is designed with robust authentication, validation, and error handling mechanisms to ensure the secure and accurate processing of orders.
 
 ## **Project Structure**
 Below is a brief description of the major components in the project:
